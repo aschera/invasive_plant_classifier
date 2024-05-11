@@ -1,63 +1,17 @@
-# websites on invasive plantsplants
+- **Project Overview**:
+  - The project aims to develop a comprehensive system for identifying and classifying invasive plant species using a combination of image classification models and Bayesian inference. By integrating data from various sources, including plant images and geographic information, the system seeks to improve our understanding of species distribution patterns and facilitate more effective management strategies for invasive species.
 
-## Länsstyrelsen Västra Götaland, Invasiva främmande arter
-https://www.lansstyrelsen.se/vastra-gotaland/djur/invasiva-frammande-arter.html
+- **Dataset Description**:
+  - The dataset comprises thousands of hobbyist photographs of plants, obtained from platforms like iNaturalist. Each observation includes attributes such as observed date, time, user information, data quality, licensing, location, and taxonomic information, providing valuable insights into species occurrences and environmental conditions.
 
-## NATURVÅRDSVERKET, Definition
-https://www.naturvardsverket.se/amnesomraden/invasiva-frammande-arter/vad-ar-ifa/definition/
+- **Image Preprocessing and Geographic Data Integration**:
+  - Preprocessing involves resizing and normalizing plant images to facilitate feature extraction. Geographic data, including latitude, longitude, and positional accuracy, are incorporated to enable spatial analysis and mapping of species occurrences.
 
-## Invasiva främmande arter på EU:s förteckning – Växter
-https://www.naturvardsverket.se/4acbae/globalassets/amnen/invasiva-frammande-arter/pdf/forteckning-av-invasiva-vaxter/eu-listade-invasiva-frammande-arter-vaxter.pdf
+- **Deep Learning Model Architecture**:
+  - The chosen deep learning model architecture for plant species classification utilizes techniques such as convolutional neural networks (CNNs) for feature extraction from images. These features are then combined with other environmental variables and species occurrence records for Bayesian inference.
 
-## öka kunskap viktig
-https://www.gotene.se/byggaboochmiljo/nyhetsarkivbyggaboochmiljo/flerbehoverkannaigeninvasivaarter.262520.html
+- **Contributions to the Project**:
+  - My contributions to the project include model development, experimentation, and evaluation. This involves selecting appropriate model architectures, preprocessing image and geographic data, training the models, and assessing their performance.
 
-
-# Papers that have done similar things
-
-## Spread of alien invasive plant species in Blekinge County, Sweden
-https://www.diva-portal.org/smash/get/diva2:1672066/FULLTEXT01.pdf
-
-
-
-
-# Data
-
-## 1 images.
-thousands of hobby photographs of plants.
-https://www.inaturalist.org/observations/export
-
-
-### 1.1 How the data looks:
-Observed Data: Attributes like observed_on_string, observed_on, time_observed_at, and time_zone provide information about when and where the image was captured, which can be valuable for understanding species distribution patterns and environmental conditions.
-
-User Information: Attributes like user_id, user_login, and user_name can help track who contributed the image data, which may be useful for quality control, data validation, and collaboration with citizen scientists or volunteers.
-
-Data Quality and Licensing: Attributes such as quality_grade and license indicate the quality and licensing status of the image data, which can be important for assessing the reliability and legal compliance of the data.
-
-Location Information: Attributes like latitude, longitude, and positional_accuracy provide precise location data for the image observations, allowing for spatial analysis and mapping of species occurrences.
-
-Taxonomic Information: Attributes such as species_guess, scientific_name, common_name, iconic_taxon_name, and taxon_id contain taxonomic information about the observed species, enabling species identification and classification in your Bayesian model.
-
-Image Metadata: Attributes like url, image_url, sound_url, and description provide additional metadata associated with the images, which can be used for visual inspection, data exploration, and interpretation.
-
-## 2 data on which plants are invasive.
-Swedish species observations invasive
-
-https://sosgeo.artdata.slu.se/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?3&filter=false
-
-
-# Image classification-model and Bayesian-model
-How Bayesian models and image recognition models can work together:
-
-Data Integration: You can use image recognition models to extract features from images, such as plant morphology, color, texture, and structure. These features can then be incorporated as variables in your Bayesian model alongside other types of data, such as environmental variables, species occurrence records, or ecological measurements.
-
-Model Training: The output of the image recognition model, which typically includes predictions or classifications of plant species based on images, can be used as training data for your Bayesian model. This training data can help improve the performance and accuracy of your Bayesian model by providing additional information about the observed species.
-
-Feature Engineering: Image recognition models can assist in feature engineering by automatically extracting relevant features from images. These features can serve as input variables for your Bayesian model, helping to capture the complex relationships between image characteristics and species occurrence or environmental conditions.
-
-Model Fusion: You can integrate the outputs of both models using fusion techniques. For example, you can combine the probabilities or predictions generated by the image recognition model with the probabilities or predictions produced by the Bayesian model to obtain a more comprehensive assessment of species occurrence or ecological patterns.
-
-Uncertainty Estimation: Bayesian models are well-suited for uncertainty estimation, allowing you to quantify uncertainty in predictions based on the available data. By combining information from image recognition models with Bayesian inference, you can better characterize uncertainty in species identification or ecological predictions, providing more reliable and robust results.
-
-Model Validation: Image recognition results can be used to validate the predictions of your Bayesian model. By comparing the predicted species occurrences or ecological patterns derived from both models with observed data, you can assess the consistency and accuracy of your Bayesian model and identify areas for improvement.
+- **Classification Results and Insights**:
+  - The classification results demonstrate the system's ability to accurately identify and classify invasive plant species. Performance metrics such as accuracy, precision, and recall are used to evaluate model performance. Spatial insights derived from the analysis provide valuable information for understanding species distribution patterns and informing management strategies.
